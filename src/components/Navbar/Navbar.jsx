@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from '../Link/Link';
 
 const Navbar = () => {
 
@@ -25,19 +26,21 @@ const Navbar = () => {
         },
     ]
     return (
-        <nav>
-            <div>
-                <ul>
-                    {
-                        routes.map(routes => (
-                            <li
-                                key={id}
-                                component={component}></li>
-                        ))
-                    }
+        <nav className=' mx-auto bg-slate-400'>
+            <div className=' mr-8 ml-8 p-4'>
+                <ul className='md:flex justify-between items-center'>
+                    <a href="#"><img src="#" alt="" />Clyppanpath</a>
+                    <div className='grid lg:flex'>
+                        {
+                            routes.map(routes => (
+                                <Link key={routes.id}
+                                    routes={routes}
+                                ></Link>
+                            ))
+                        }
+                    </div>
                 </ul>
             </div>
-
         </nav>
     );
 };
