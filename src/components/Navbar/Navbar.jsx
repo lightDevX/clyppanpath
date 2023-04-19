@@ -11,21 +11,21 @@ const Navbar = () => {
         {
             "id": 1,
             "component": "Home",
-            "path": "/Home"
+            "path": "/home"
         },
         {
             "id": 2,
             "component": "Services",
-            "path": "/Services"
+            "path": "/services"
         },
         {
             "id": 3,
-            "component": "price",
+            "component": "Price",
             "path": "/price"
         },
         {
             "id": 4,
-            "component": "contact",
+            "component": "Contact",
             "path": "/contact"
         },
     ]
