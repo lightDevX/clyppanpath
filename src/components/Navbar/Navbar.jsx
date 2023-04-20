@@ -7,28 +7,28 @@ const Navbar = () => {
 
     const [open, setOpen] = useState(false);
 
-    const routes = [
-        {
-            "id": 1,
-            "component": "Home",
-            "path": "/home"
-        },
-        {
-            "id": 2,
-            "component": "Services",
-            "path": "/services"
-        },
-        {
-            "id": 3,
-            "component": "Price",
-            "path": "/price"
-        },
-        {
-            "id": 4,
-            "component": "Contact",
-            "path": "/contact"
-        },
-    ]
+    // const routes = [
+    //     {
+    //         "id": 1,
+    //         "component": "Home",
+    //         "path": "/home"
+    //     },
+    //     {
+    //         "id": 2,
+    //         "component": "Services",
+    //         "path": "/services"
+    //     },
+    //     {
+    //         "id": 3,
+    //         "component": "Price",
+    //         "path": "/price"
+    //     },
+    //     {
+    //         "id": 4,
+    //         "component": "Contact",
+    //         "path": "/contact"
+    //     },
+    // ]
     return (
         <nav className=' mx-auto bg-slate-400'>
             <div onClick={() => setOpen(!open)} className=' md:hidden'>
@@ -44,13 +44,14 @@ const Navbar = () => {
                 <ul className={`md:flex justify-between items-center absolute md:static bg-slate-400 ${open ? 'top-6' : '-top-36'}`}>
                     <a href="#"><img src="#" alt="" />Clyppanpath</a>
                     <div className='grid lg:flex'>
-                        {
+                        {/* {
                             routes.map(routes => (
                                 <Link key={routes.id}
                                     routes={routes}
                                 ></Link>
                             ))
-                        }
+                        } */}
+                        <Link />
                     </div>
                 </ul>
             </div>
