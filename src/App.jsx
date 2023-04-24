@@ -1,16 +1,19 @@
+import { Outlet } from 'react-router-dom'
 import './App.css'
-import Charts from './components/Charts/Charts'
-import Navbar from './components/Navbar/Navbar'
+import Header from './components/Header/Header'
+
 
 function App() {
 
 
   return (
-    <div className="App">
-      <Navbar />
-      <Charts />
+    // <div className="App">
 
-    </div>
+    // </div>
+    <>
+      <Header></Header>
+      <Outlet></Outlet>
+    </>
   )
 }
 

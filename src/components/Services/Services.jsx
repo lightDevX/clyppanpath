@@ -3,7 +3,7 @@ import React from 'react';
 const Services = () => {
     return (
         <div>
-            <h3>This service page</h3>
+            <h2>This is Service</h2>
         </div>
     );
 };

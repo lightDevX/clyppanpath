@@ -7,11 +7,13 @@ import {
 } from 'react-router-dom'
 import './index.css'
 import Services from './components/Services/Services'
+import Home from './components/Home/Home'
+import Header from './components/Header/Header'
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />
+    element: <Home></Home>
   },
   {
     path: 'service',
