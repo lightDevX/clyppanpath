@@ -6,19 +6,22 @@ import {
   RouterProvider,
 } from 'react-router-dom'
 import './index.css'
+import Root from './components/Root/Root'
 import Services from './components/Services/Services'
-import Home from './components/Home/Home'
-import Header from './components/Header/Header'
+
 
 const router = createBrowserRouter([
   {
-    path: "/",
-    element: <Home></Home>
+    path: '/',
+    element: <Root />,
+    children: [
+      {
+        path: '/services',
+        element: <Services />
+      }
+    ]
+
   },
-  {
-    path: 'service',
-    element: <Services />
-  }
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
