@@ -2,6 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Header = () => {
+
+    const navItems = [
+
+    ]
     return (
         <nav className=' bg-slate-400 p-3 mx-auto'>
             <div className=' container '>
